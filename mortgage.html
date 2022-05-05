@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <title>Real Estate</title>
+  <link href="styles/mortgage.css" rel="stylesheet">
+  <link href="styles/common.css" rel="stylesheet">
+  <script>
+    var term;
+    var apr;
+    var amt;
+    var mPmt;
+
+    window.onload = function () {
+      document.getElementById("apr").focus();
+      document.getElementById("sbt").onclick = getValues;
+    };
+
+    //use toFixed(2) to set the precision of the mPayment. Use it on an int.
+    function getValues() {
+      term = document.getElementById("trm").value;
+      apr = document.getElementById("apr").value;
+      amt = document.getElementById("amt").value;
+      apr /= 1200;
+      term *= 12;
+      mPmt = calculatePayment();
+      document.getElementById("pmt").value = "$" + mPmt.toFixed(2);
+    };
+
+    function calculatePayment() {
+      var payment = amt * (apr * Math.pow((1 + apr), term)) / (Math.pow((1 + apr), term) - 1);
+      return payment;
+    }
+  </script>
+</head>
+<body bgcolor="#b0e0e6">
+  <div class="banner">
+    <div class="logo">
+      <img src="images/logo.png" height="120" width="120">
+      <font size="14">Riverside <br />Real Estate Agency</font>
+    </div>
+    <div class="topnav">
+      <a class="home" href="final2.html" style="color:white;">Home</a>
+      <a href="prop.html">Properties</a>
+      <a href="mortgage.html">Mortgage Calculator</a>
+      <a href="info.html">Communities & Info</a>
+      <a href="about.html">About Us</a>
+      <a href="contact1.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="mortgage">
+    
+      <h1>Mortgage Calculator</h1>
+      Mortgage calculators are automated tools that enable users to determine the financial implications of changes in
+      one or more variables in a mortgage financing arrangement. Mortgage calculators are used by consumers to determine
+      monthly repayments, and by mortgage providers to determine the financial suitability of a home loan applicant.[1]
+
+      The major variables in a mortgage calculation include loan principal, balance, periodic compound interest rate,
+      number of payments per year, total number of payments and the regular payment amount. More complex calculators can
+      take into account other costs associated with a mortgage, such as local and state taxes, and insurance.[2]
+
+      Mortgage calculation capabilities can be found on financial handheld calculators such as the HP-12C or Texas
+      Instruments TI BA II Plus. There are also multiple free online free mortgage calculators, and software programs
+      offering financial and mortgage calculations.
+  </br></br>
+      <form action="">
+        <label>APR% : <input type="text" id="apr" name="APR" /></label><br />
+        <label>Loan Term: <input type="text" id="trm" name="APR" /></label></br>
+        <label>Loan Amount: <input type="text" id="amt" name="amt" /></label></br>
+        <input type="text" id="pmt" name="mPmt" />
+        <input type="button" id="sbt" value="Submit" />
+        <input type="reset" id="rst" value="Reset Form" />
+      </form>
+    </center>
+  </div>
+  <div class="connect">
+    <h3 id="five">Contact us at:</h3>
+    <p>Office: 224-890-9909</p>
+    <p>Direct: 434-434-2345</p>
+    <p>Location: 1600 E. Golf Road<br />Des Plaines, IL</p>
+    <p>Email: <a href="mailto:riverside@river.com:">
+        river@riverside.com</a>.</p>
+  </div>
+  
+  <br />
+  
+  <nav class="bottom">
+    <a href="final2.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="info.html">Communities & Info</a>
+    <a href="mortgage.html">Mortgage</a>
+    <a href="prop.html">Properties</a>
+    <a href="contact1.html">Contact Us</a>
+  </nav>
+  <br /><br />
+  <footer>
+    <p id="copy">
+      <center>
+        <font size="2">
+          &copy;MSA 2018, Illinois Riverside Real Estate Group. All rights reserved | Real Estate Website Design by Samee
+        </font>
+      </center>
+    </p>
+  </footer>
+</body>
+
+</html>

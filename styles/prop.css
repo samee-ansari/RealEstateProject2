@@ -1,0 +1,24 @@
+h1{
+    font-size: 4em;
+}
+.prop{
+    display: flex;
+    font-size: 1em;
+    width:1200px;
+    font-family: "High Tower Text";
+    flex-direction: column;
+    margin: auto;
+}
+.prop-items{
+    display: flex;
+    font-size: 1.5em;
+    gap:15px;
+}
+
+.cont2{
+    position: relative;
+    align-self: center;
+}
+.prop-items > img{
+    border-radius: 30%;
+}

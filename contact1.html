@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <title>Real Estate</title>
+  <link href="styles/contact.css" rel="stylesheet">
+  <link href="styles/common.css" rel="stylesheet">
+  <script type="text/javascript">
+    function check() {
+      var varname = document.getElementById('name').value;
+      var alphaExp = /^[a-zA-Z]+$/;
+      if (varname == '') {
+        alert('First name is required');
+      }
+      if (document.getElementById('Lastname').value == '') {
+        alert('Last Name is required');
+      }
+      if (document.getElementById('address').value == '') {
+        alert('Address is required');
+      }
+      if (document.getElementById('city').value == '') {
+        alert('City is required');
+      }
+      if (document.getElementById('state').value == '') {
+        alert('State is required');
+      }
+      if (document.getElementById('zip').value == '') {
+        alert('Zip Code is required');
+      }
+      if (document.getElementById('email').value == '') {
+        alert('Email is required');
+      }
+    }
+  </script>
+</head>
+<body bgcolor="#b0e0e6">
+  <div class="banner">
+    <div class="logo">
+      <img src="images/logo.png" height="120" width="120">
+      <font size="14">Riverside <br />Real Estate Agency</font>
+    </div>
+    <div class="topnav">
+      <a class="home" href="final2.html" style="color:white;">Home</a>
+      <a href="prop.html">Properties</a>
+      <a href="mortgage.html">Mortgage Calculator</a>
+      <a href="info.html">Communities & Info</a>
+      <a href="about.html">About Us</a>
+      <a href="contact1.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="feedback">
+  <center>
+    <h1>Send Us Your Feedback:</h1>
+  </center>
+  <center>
+    <form action="MAILTO:webcourses@aol.com" method="post" enctype="text/plain">
+      <center>
+        <font color="red">* </font><i>indicates required field</i>
+      </center><br />
+      <table>
+        <tr>
+          <th><label for="Firstname" id="lname">First Name</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+          <th><label for="Lastname">Last Name </label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="Lastname" id="Lastname"></td>
+        </tr>
+        <tr>
+          <th><label for="address">Street Address</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><textarea name="address" id="address"></textarea></td>
+        </tr>
+        <tr>
+          <th><label for="city">City</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="city" id="city"></td>
+        </tr>
+        <tr>
+          <th><label for="state">State</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="state" id="state"></td>
+        </tr>
+        <tr>
+          <th><label for="zip">Zip Code</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="zip" id="zip"></td>
+        </tr>
+        <tr>
+          <th><label for="email">E-Mail</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><input type="text" name="email" id="email"></td>
+        </tr>
+        <tr>
+          <th><label for="Comments">Feedback</label></th>
+          <th>
+            <font color="red"> *</font> :
+          </th>
+          <td><textarea name="comments" id="comments"></textarea></td>
+        </tr>
+        <tr>
+          <th><input type="reset" name="name"> </th>
+          <th> : </th>
+          <td><input type="submit" name="-->" onclick="check()"></td>
+        </tr>
+      </table>
+    </form>
+  </center>
+  </div>
+  <a href="final2.html">
+    <center>Back to home</center>
+  </a>
+<div class="connect">
+  <h3 id="five">Contact us at:</h3>
+  <p>Office: 224-890-9909</p>
+  <p>Direct: 434-434-2345</p>
+  <p>Location: 1600 E. Golf Road<br />Des Plaines, IL</p>
+  <p>Email: <a href="mailto:riverside@river.com:">
+      river@riverside.com</a>.</p>
+</div>
+<br />
+<nav class="bottom">
+  <a href="final2.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="info.html">Communities & Info</a>
+  <a href="mortgage.html">Mortgage</a>
+  <a href="prop.html">Properties</a>
+  <a href="contact1.html">Contact Us</a>
+</nav>
+<br /><br />
+<footer>
+  <p id="copy">
+    <center>
+      <font size="2">
+        &copy;MSA 2018, Illinois Riverside Real Estate Group. All rights reserved | Real Estate Website Design by Samee
+      </font>
+    </center>
+  </p>
+</footer>
+</body>
+</html>

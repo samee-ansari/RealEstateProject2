@@ -1,0 +1,62 @@
+html {
+  font-size: 12px;
+}
+body{
+  overflow: scroll;
+}
+img{
+    border-radius: 50%;
+    margin:10px;
+}
+.banner {
+  background-color: #87cefa;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+}
+
+.topnav {
+  display: flex;
+  gap: 13px;
+  justify-content: flex-end;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.topnav > a {
+  text-decoration: none;
+  padding: 8px;
+  color:black;
+}
+.home{
+  background-color: #7575a3;
+}
+.topnav a:hover {
+  background-color: white;
+}
+
+.topnav a.home:hover {
+  background-color: black;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #87cefa;
+    font-size: 1.3em;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-top: 5px;
+}
+.bottom a{
+  background-color: #87cefa;
+  padding:10px;
+}

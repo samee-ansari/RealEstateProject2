@@ -1,0 +1,9 @@
+.aboutUs{
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: "High Tower Text";
+    text-align: center;
+    max-width: 900px;
+}
